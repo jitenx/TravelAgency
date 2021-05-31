@@ -44,6 +44,8 @@ public final class Driver {
 				options.setBinary("/usr/bin/brave-browser");
 				options.addArguments("disable-extensions", "disable-infobars", "start-maximized");
 				DriverManager.setDriver(new ChromeDriver(options));
+			} else {
+				System.out.println("Browser not available");
 			}
 		}
 	}
