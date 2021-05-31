@@ -5,5 +5,5 @@
 /bin/
 /target/
 /test-output/
-/TestReport
+/TestReport/
 .project
