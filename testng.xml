@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Travel Agency Test Suite" parallel="tests"
+	thread-count="5">
+
+	<test name="Paramterization Test Brave">
+		<parameter name="browser" value="brave"></parameter>
+		<parameter name="departureCity" value="Mexico City"></parameter>
+		<parameter name="destinationCity" value="London"></parameter>
+		<classes>
+			<class name="com.travel.PurchaseFlightsTest"></class>
+		</classes>
+	</test>
+
+	<test name="Paramterization Test Chrome2">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="departureCity" value="Boston"></parameter>
+		<parameter name="destinationCity" value="Dublin"></parameter>
+		<classes>
+			<class name="com.travel.PurchaseFlightsTest"></class>
+		</classes>
+	</test>
+
+	<test name="Simple Test">
+		<parameter name="browser" value="brave"></parameter>
+		<parameter name="departureCity" value="Portland"></parameter>
+		<parameter name="destinationCity" value="Cairo"></parameter>
+		<classes>
+			<class name="com.travel.FlightsTest"></class>
+		</classes>
+	</test>
+	<test name="LinkTest">
+		<classes>
+			<class name="com.travel.LinkTest"></class>
+		</classes>
+	</test>
+	<listeners>
+		<listener class-name="com.listener.ListenerTestNG"/>
+	</listeners>
+</suite>
