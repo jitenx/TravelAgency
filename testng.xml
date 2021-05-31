@@ -3,8 +3,8 @@
 <suite name="Travel Agency Test Suite" parallel="tests"
 	thread-count="5">
 
-	<test name="Paramterization Test Brave">
-		<parameter name="browser" value="brave"></parameter>
+	<test name="Paramterization Test Chrome">
+		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="departureCity" value="Mexico City"></parameter>
 		<parameter name="destinationCity" value="London"></parameter>
 		<classes>
@@ -12,8 +12,8 @@
 		</classes>
 	</test>
 
-	<test name="Paramterization Test Chrome2">
-		<parameter name="browser" value="chrome"></parameter>
+	<test name="Paramterization Test Firefox">
+		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="departureCity" value="Boston"></parameter>
 		<parameter name="destinationCity" value="Dublin"></parameter>
 		<classes>
@@ -22,7 +22,7 @@
 	</test>
 
 	<test name="Simple Test">
-		<parameter name="browser" value="brave"></parameter>
+		<parameter name="browser" value="Chrome"></parameter>
 		<parameter name="departureCity" value="Portland"></parameter>
 		<parameter name="destinationCity" value="Cairo"></parameter>
 		<classes>

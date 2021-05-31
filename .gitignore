@@ -1,7 +1,9 @@
+
+/.classpath
 /target/
 /.settings/
 /bin/
 /target/
 /test-output/
-.classpath
+/TestReport
 .project
